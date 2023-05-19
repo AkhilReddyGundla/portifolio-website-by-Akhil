@@ -1,0 +1,504 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    
+    
+}
+header{
+    font-family: 'Source Sans Pro', sans-serif;
+    position:fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding:1rem 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+   background-color: white;
+   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.2);
+   font-weight: 400;
+}
+.logo{
+    font-size: 2rem;
+    color: #333;
+    font-weight: 600;
+}
+.nav{
+    color:#333;
+    font-size: 1.2rem;
+    margin: 0rem 1rem;
+}
+.nav:hover{
+    color: #ff0000;
+}
+.home{
+    color:#fff;
+    background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+    background-position: center;
+    height: 100vh;
+    /* min-height: 80rem;
+    max-height: 80rem; */
+    position: relative;
+}
+.home-text{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.4rem;
+}
+.home-content{
+    
+    position:absolute;
+    top:53%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 90rem;
+    width:92%;
+}
+.primary-heading{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #111;
+    font-weight: 800;
+}
+.home-info{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 100;
+    color:#333;
+    font-size: 1.1rem;
+    text-align: center;
+    width: 100%;
+    line-height: 3.5;
+}
+.btn{
+    background-color: #facf0f;
+    color:black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.35);
+    margin-top: 2rem;
+    padding: 0.05rem 4rem;
+    font-size: 1.25rem;
+    transition: transform .3s;
+}
+
+.socials{
+    position:absolute;
+    top: 50%;
+    transform: translateY(56%);
+    transform: translateX(-125%);
+    padding: 0rem;
+    margin: 0rem;
+    width:3rem;
+    background-color: white;
+    box-shadow: 5px 5px 15px 0 rgba(0,0,0,.35);
+}
+.social-icon{
+    padding: 12%;
+}
+.coding-profiles{
+    position:absolute;
+    top: 50%;
+    transform: translate(2000%, 100px);
+    padding: 0rem;
+    margin: 0rem;
+    width:3rem;
+    background-color: white;
+    box-shadow: 5px 5px 15px 0 rgba(0,0,0,.35);
+}
+.home-coding-profiles{
+    display: flex;
+    flex-direction: column;
+    /* background-color: white; */
+}
+.coding-icon{
+    width: 90%;
+    padding: 12%;
+}
+.mouse{
+    width: 25px;
+    height: 40px;
+    border:2px solid #333;
+    border-radius:60px;
+    position: absolute;
+    top:140%;
+    left:50%;
+}
+.mouse::before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top:7px;
+    left:50%;
+    transform:translateX(-50%);
+    background-color: #ff0000;
+    opacity: 1;
+    border-radius: 50%;
+    animation: wheel 1.3s infinite;
+    -webkit-animation: wheel 1.3s infinite;
+}
+
+@keyframes wheel {
+    to{
+        opacity: 0;
+        top:27px;
+    }
+}
+@-webkit-keyframes wheel{
+    to{
+        opacity: 0;
+        top:27px;
+    }
+}
+
+.aboutMe-content{
+    margin: 0rem 8rem;
+}
+.header{
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    margin:3rem 7rem;
+    
+}
+
+.header_para{
+    font-size: 1.1rem;
+    font-weight: 100;
+    color:#666;
+    line-height: 1.7;
+    max-width: 60rem;
+    margin: 1rem auto;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: none;
+}
+.grid-about{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem;
+}
+.contactMe-btn{
+    border: none;
+    background-color: #facf0f;
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 1px;
+    width: 30%;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 3.5rem;
+}
+.left-text{
+    max-width: 60rem;
+}
+.text-heading{
+    font-size: 2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.left-paragraph-head{
+    font-family: 'Source Sans Pro', sans-serif;
+    color:#666;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+}
+.left-paragraph-main{
+    font-family: 'Source Sans Pro', sans-serif;
+    color:#666;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+}
+.left-paragraph-footer{
+    font-family: 'Source Sans Pro', sans-serif; 
+    color:#666;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+.right-text{
+    font-family: 'Source Sans Pro', sans-serif;
+    max-width: 60rem;
+}
+.skill-set{
+    display:flex;
+    flex-wrap: wrap;
+}
+.skill{
+    background-color: rgba(153,153,153,.2);
+    margin: 1rem;
+    font-size: 1.3rem;
+    padding:0.7rem 1.4rem;
+    border-radius: 5px;
+    margin: 10px;
+}
+.edu-header{
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    padding-top: 5rem;
+}
+.education{
+    background-color:rgba(118, 118, 118, 0.101);
+    /* border: 2px solid; */
+    margin-top:3rem;
+
+}
+.container{
+    margin: 0rem 8rem 0rem 8rem;
+    
+}
+.schools{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    margin-left:0rem;
+    margin-right: 0rem;
+    margin-bottom: 0rem;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    justify-content: center;
+    /* margin: 0rem 0rem 0rem 3rem; */
+    /* width: 100%;
+    height:100%; */
+}
+.box1,.box3,.box2,.box4{
+    border:1px ;
+    width: 19rem;
+    /* min-width:20rem;
+    max-width: 30rem; */
+    height:15rem;
+    margin-bottom: 50px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(162, 162, 255);
+    /* background-color: #facf0f; */
+}
+.image1{
+    /* margin: 10px; */
+    width: 5rem;
+    border-radius: 10px;
+}
+.image2{
+    width:5rem;
+    height: 5rem;
+    /* margin: 10px; */
+}
+.image3{
+    width:8rem;
+    height: 6rem;
+}
+.image4{
+    width:5rem;
+    height: 5rem;
+    border-radius: 10px;
+    /* margin: 5px; */
+}
+.content{
+    padding: 5px 10px 0px 10px;
+    max-width: 20rem;
+    min-width: 20rem;
+    font-size: 1rem;
+    font-family:cursive;
+}
+
+.card{
+    width:100%;
+    height: 100%;
+    top:0;
+    right: 0;
+    position: absolute;
+    background-color: #666;
+}
+
+.project-container{
+    max-width: 100%;
+    height: 40rem;
+    /* border: 1px soild red; */
+    /* background-color: #111; */
+}
+.project{
+    margin-top: 5rem;
+    margin-left:10rem;
+    margin-right: 0rem;
+    margin-bottom: 0rem;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+.contact{
+    width: 100%;
+    height: 65rem;
+    max-width: 100%;
+    /* color:#fff; */
+    background-image: url(images/contactbg.jpg);
+    background-position: center;
+    background-size: cover;
+    /* position: relative; */
+}
+.heading{
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    padding-top: 5rem;
+}
+.contact-para{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 100;
+    color:#666;
+    line-height: 1.7;
+    max-width: 60rem;
+    margin: 1rem auto;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: none;
+    word-spacing: 1px;
+}
+.contact-form{
+    text-align: right;
+    background-color: #fff;
+    max-width: 40rem;
+    width: 95%;
+    height: 43rem;
+    margin: 5rem auto 0rem auto;
+    padding: 4rem;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+.form-field{
+    margin-bottom: 2rem;
+}
+.form-label-name{
+    color:#666;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-family:'Quicksand', sans-serif;
+    text-align: left;
+    display: block;
+    margin-bottom: 1rem;
+}
+.form-label-field{
+    text-align: left;
+    width: 100%;
+    padding: 1rem;
+    border:1px solid #ebebeb;
+    background:#f0f0f0;
+    margin-bottom: 12px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+textarea{
+    resize: none;
+}
+.contact_form-input{
+    color: #666;
+    font-size: 0.9rem;
+    /* letter-spacing: 1px; */
+    background: #f0f0f0;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    padding: 1rem;
+    font-weight: 400;
+    margin-bottom: 12px;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 5px;
+}
+.form_submit-btn{
+    border: none;
+    background-color: #facf0f;
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 1px;
+    width: 30%;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.main-footer{
+    background-color: #111;
+    color: #fff;
+}
+.upper-container{
+    /* width: 100%; */
+    /* max-width: 120rem; */
+    display: flex;
+    justify-content: space-between;
+    padding: 83.2px 0;
+    border-bottom: 1px solid rgb(255, 254, 254);
+}
+
+.myName{
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.7rem;
+}
+.aboutMe{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 2rem;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+.socials-heading{
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+    /* padding-left: ; */
+}
+.right-text-footer{
+    margin-left: 33.3rem;
+}
+.footer-social-icon1{
+    width: 2.5rem;
+    margin-right: 10px;
+}
+
+.footer-social-icon2{
+    width: 2.5rem;
+    margin-right: 10px;
+}
+
+.footer-social-icon3{
+    width: 2.5rem;
+    /* margin-right: 10px; */
+}
+.lower-container{
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.8rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
