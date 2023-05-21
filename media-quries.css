@@ -1,0 +1,76 @@
+@media screen and (max-width:1030px){
+    .nav-toggle{
+        display: block;
+        cursor: pointer;
+    }
+    .nav-links{
+        position: absolute;
+        left: -110%;
+        top: 100%;
+        width: 100%;
+        background-color: white;
+        align-items: center;
+        padding-block: 20px;
+        /* display: none; */
+    }
+    .nav-links.active{
+        left: 0;
+    }
+    .nav-links ul{
+        gap: 25px;
+        flex-direction: column;
+    }
+    .nav-link{
+        width: 100%;
+        /* border-bottom: 2px solid; */
+    }
+    .project{
+        flex-direction: column;
+        justify-content: center;
+        max-width: 60%;
+    }
+    .project-description,.project-Image{
+        align-items: center;
+        width: 100%;
+    }
+    .project-button{
+        padding: 4% 6%;
+        
+    }
+}
+@media screen and (max-width:800px){
+    .grid-about{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:620px){
+    .home-social{
+        width: 6%;
+    }
+    .contact-form{
+        padding: 2rem;
+    }
+    .form_submit-btn{
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px){
+    .logo{
+        font-size: 1rem;
+    }
+    .img-name{
+        height: 2rem;
+    }
+    .my-photo{
+        width: 25px;
+    }
+    .upper-container{
+        flex-direction: column;
+    }
+    right-text-footer{
+        order: 1;
+    }
+    .left-text{
+        order: 2;
+    }
+}
