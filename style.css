@@ -112,6 +112,7 @@ a{
 .home-text{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.4rem;
+    font-weight: 500;
 }
 .home-content{
     
@@ -236,12 +237,12 @@ a{
     font-size: 2.6rem;
     text-transform: uppercase;
     margin:3rem 4rem;
-    
+    padding-top: 5rem;
 }
 
 .header_para{
     font-size: 1.1rem;
-    font-weight: 100;
+    font-weight: 600;
     color:#666;
     line-height: 1.7;
     width: auto;
@@ -509,7 +510,7 @@ a{
 .contact-para{
     text-align: center;
     font-size: 1.1rem;
-    font-weight: 100;
+    font-weight: 600;
     color:#666;
     line-height: 1.7;
     max-width: 60rem;
