@@ -247,6 +247,7 @@ a{
     line-height: 1.7;
     width: auto;
     margin: 1rem auto;
+    text-align: center;
     font-family: 'Quicksand', sans-serif;
     text-transform: none;
 }
