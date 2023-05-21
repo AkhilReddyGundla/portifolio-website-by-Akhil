@@ -1,7 +1,7 @@
 @media screen and (max-width:1030px){
     .nav-toggle{
         display: block;
-        cursor: pointer;
+        font-size: 1.3rem;
     }
     .nav-links{
         position: absolute;
@@ -45,7 +45,7 @@
 }
 @media screen and (max-width:620px){
     .home-social{
-        width: 6%;
+        width: 8%;
     }
     .contact-form{
         padding: 2rem;
