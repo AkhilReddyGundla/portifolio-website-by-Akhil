@@ -38,6 +38,29 @@
         
     }
 }
+@media screen and (max-width:920px) {
+    .left-paragraph-head,.left-paragraph-main,.left-paragraph-footer{
+        font-size: 1rem;
+    }
+    .skill{
+        font-size: 1rem;
+    }
+    .text-heading{
+        font-size: 1.5rem;
+    }
+    h3,.heading{
+        font-size: 2rem;
+    }
+    .header_para{
+        font-size:0.9rem ;
+    }
+    .primary-heading{
+        font-size: 3.5rem;
+    }
+    .home-text{
+        font-size: 1.2rem;
+    }
+}
 @media screen and (max-width:800px){
     .grid-about{
         flex-direction: column;
