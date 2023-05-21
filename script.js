@@ -1,3 +1,18 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const navItems = navLinks.querySelectorAll('.nav-link');
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            navLinks.classList.remove('active'); 
+        });
+    })
+    toggleButton.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+});
+
+
 function sendEmail(){
     let name = document.getElementById("name").value;
     let email = document.getElementById("mail").value;
