@@ -487,11 +487,9 @@ a{
     margin: 20px 0;
 }
 .logos{
-    display: flex;
+    /* display: flex; */
     margin-top: 10px;
-    /* margin-bottom: 10px; */
-    justify-content: center;
-    /* align-items: center; */
+    align-items: center;
 }
 .tech-stack-heading{
     font-size: 1.2rem;
