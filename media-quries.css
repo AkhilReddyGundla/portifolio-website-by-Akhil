@@ -1,4 +1,4 @@
-@media screen and (max-width:1030px){
+@media screen and (max-width:1024px){
     .nav-toggle{
         display: block;
         font-size: 1.3rem;
@@ -27,11 +27,23 @@
     .project{
         flex-direction: column;
         justify-content: center;
-        max-width: 60%;
+        max-width: 100%;
+        margin: 0px;
     }
-    .project-description,.project-Image{
+    .project-description{
         align-items: center;
-        width: 100%;
+        width: 70%;
+        align-self: center;
+    }
+    .about-project,.tech-stack-heading{
+        text-align: center;
+    }
+    .project-heading{
+        text-align: center;
+    }
+    .project-Image{
+        width: max-content;
+        align-self: center;
     }
     .project-button{
         padding: 4% 6%;
@@ -96,4 +108,40 @@
     .left-text{
         order: 2;
     }
+}
+
+@media screen and (max-width:426px) {
+    .header{
+        padding: 0;
+    }
+    .project{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 80px;
+    }
+    .project-Image{
+        max-width: 100%;
+    }
+    .project-description{
+        width: 100%;
+    }
+    .header{
+        padding: 0;
+        margin-left:10px;
+        margin-right: 10px;
+    }
+    .contact-form{
+        width: 100%;
+        padding: 2rem;
+    }
+    .content{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 321px) {
+    .box1,.box2,.box3,.box4,.box-content{
+        width: 100%;
+    }
+    
 }
