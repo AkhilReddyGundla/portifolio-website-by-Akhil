@@ -479,16 +479,19 @@ a{
     font-size: 1.2rem;
     font-family: 'Source Sans Pro',sans-serif;
     color: #666;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 .tech-stack{
     height:auto;
     width:100%;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 .logos{
+    display: flex;
     margin-top: 10px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    justify-content: center;
+    /* align-items: center; */
 }
 .tech-stack-heading{
     font-size: 1.2rem;
