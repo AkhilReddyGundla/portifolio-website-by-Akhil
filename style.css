@@ -389,12 +389,43 @@ a{
 }
 .content{
     padding: 5px 10px 0px 10px;
-    max-width: 20rem;
-    min-width: 20rem;
-    font-size: 1rem;
-    font-family:cursive;
+    width: 100%;
+    font-size: 1.1rem;
+    font-family:'Source Sans Pro', sans-serif;
 }
-
+.resBox{
+    cursor: pointer;
+    padding: 1px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.box1Result{
+    display: flex;
+    display: none;
+    flex-direction: row;
+    margin: 5%;
+    align-content: center;
+}
+.box1:hover{
+    .box1Result{
+    display: block;
+    }
+}
+.box2:hover{
+    .box1Result{
+        display: block;
+        }
+}
+.box3:hover{
+    .box1Result{
+        display: block;
+        }
+}
+.box4:hover{
+    .box1Result{
+        display: block;
+        }
+}
 .card{
     width:100%;
     height: 100%;
@@ -435,6 +466,7 @@ a{
     height: 15rem;
     border-radius: 5px;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,0.9);
+    /* background: cov; */
 }
 .project-heading{
     font-size: 2.5rem;
@@ -649,4 +681,8 @@ textarea{
 }
 .contactMe-btn:hover{
     transform: translateY(-3px);
+}
+
+#resume{
+    border: none;
 }
