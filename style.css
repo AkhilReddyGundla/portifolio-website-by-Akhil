@@ -147,6 +147,7 @@ a{
     text-transform: uppercase;
     letter-spacing: 1px;
     display: inline-block;
+    cursor: pointer;
     font-weight: 700;
     border-radius: 5px;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,.35);
