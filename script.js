@@ -63,11 +63,15 @@ document.addEventListener('DOMContentLoaded', () => {
         else if (e.target.id === "primarySchoolRes") {
             window.open('documents/primarySchoolCertificate.pdf', '_blank');
         }
-        else if(e.target.id='resume'){
-            window.open('documents/finalResumeCMV.pdf', '_blank');
-        }
       });
     });
   });
+
+  document.addEventListener('DOMContentLoaded',()=>{
+    const resume=document.querySelector('#resume');
+    resume.addEventListener('click',(e)=>{
+        window.open('documents/finalResumeCMV.pdf', '_blank');
+    })
+  })
   
   
