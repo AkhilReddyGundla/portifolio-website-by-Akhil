@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('DOMContentLoaded',()=>{
     const resume=document.querySelector('#resume');
     resume.addEventListener('click',(e)=>{
-        window.open('documents/finalResumeCMV.pdf', '_blank');
+        window.open('documents/finalResume(2).pdf', '_blank');
     })
   })
   
