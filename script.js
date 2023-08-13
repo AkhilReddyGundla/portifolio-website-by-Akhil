@@ -17,22 +17,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitButton = document.querySelector('.form_submit-btn');
     submitButton.addEventListener('click',function(event){
         event.preventDefault();
-        let parameters = {
-            name : document.getElementById("name").value,
-            designation : document.getElementById("designation").value,
-            message : document.getElementById("message").value,
-        };
-        const serviceId = "service_9kwgobl";
-        const templetId = "template_4blntos";
-        emailjs.init("mo02Cwj35purVWKKt");
-        emailjs
-            .send(serviceId,templetId,parameters).then((res)=>{
-                document.getElementById("name").value="";
-                document.getElementById("designation").value="";
-                document.getElementById("message").value="";
-                alert("Your message sent successfully");
-            })
-            .catch((err) =>console.log(err));
+        const userName = document.getElementById("name").value;
+        const userDesignation = document.getElementById("designation").value;
+        const userMessage = document.getElementById("message").value;
+        if(userName === "" || userDesignation === "" || userMessage === ""){
+            alert("Please check your details");
+        }else{
+            let parameters = {
+                name : userName,
+                designation : userDesignation,
+                message : userMessage,
+            };
+            const serviceId = "service_9kwgobl";
+            const templetId = "template_4blntos";
+            emailjs.init("mo02Cwj35purVWKKt");//publick key
+            emailjs
+                .send(serviceId,templetId,parameters).then((res)=>{
+                    document.getElementById("name").value="";
+                    document.getElementById("designation").value="";
+                    document.getElementById("message").value="";
+                    alert("Your message sent successfully");
+                })
+                .catch((err) =>console.log(err));
+        }
     })
 });
 
