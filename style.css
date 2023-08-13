@@ -605,6 +605,9 @@ textarea{
     font-family: 'Quicksand', sans-serif;
     border-radius: 5px;
 }
+.important{
+    color: red;
+}
 .form_submit-btn{
     border: none;
     background-color: #facf0f;
