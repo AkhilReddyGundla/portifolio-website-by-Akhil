@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js"></script>
     <title>Akhil's Website</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+
 </head>
 <body>
     <header>
@@ -177,13 +181,13 @@
             <div class="project-container container">
                 <div class="header">
                     <h3>projects</h3>
-                    <p class="header_para">Here you will find some of the personal projects that I created</p>
+                    <p class="header_para">Here you will find some of the personal that I created</p>
                 </div>
                 <div class="projects-list">
                     <div class="project">
                         <img src="images/project1.png" alt="nature-grid-img" class="project-Image">
                         <div class="project-description">
-                            <h3 class="project-heading">SortIt</h3>
+                            <h3 class="project-heading">Sorting Visualizer</h3>
                             <p class="about-project">This is a project that helps in visualizing sorting algorithms such as bubble sort, selection sort, merge sort, insertion sort and quick sort. </p>
                             <div class="tech-stack">
                                 <h4 class="tech-stack-heading">Tech stack</h4>
@@ -194,14 +198,14 @@
                                 </div>
                             </div>
                             <div class="project-button">
-                                <a href="https://akhilreddygundla.github.io/sortingVisualizer/" target="_blank" class="project-btn">Live Website</a>
+                                <a href="https://akhilreddygundla.github.io/sortingVisualizer/" target="_blank" class="project-btn">Project Link</a>
                               </div>
                         </div>
                     </div>
                     <div class="project">
                         <img src="images/guessNumber.png" alt="guessNumber-ing" class="project-Image">
                         <div class="project-description">
-                            <h3 class="project-heading">Guessing Galaxy</h3>
+                            <h3 class="project-heading">Number Guessing Game</h3>
                             <p class="about-project">This is a simple but fun game that tests your guessing skills. Give it a try and see how well you do! </p>
                             <div class="tech-stack">
                                 <h4 class="tech-stack-heading">Tech stack</h4>
@@ -212,7 +216,7 @@
                                 </div>
                             </div>
                             <div class="project-button">
-                                <a href="https://guess-number-seven-ivory.vercel.app/" target="_blank" class="project-btn">Live Website</a>
+                                <a href="https://guess-number-seven-ivory.vercel.app/" target="_blank" class="project-btn">Project Link</a>
                               </div>
                         </div>
                     </div>
@@ -228,20 +232,20 @@
                 <p class="header_para">Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
             </div>
             <div class="contact-form">
-                <form onsubmit="sendEmail(); reset(); return false;">
+                <form>
                     <div class="form-field">
-                    <h5 class="form-label-name">Name</h5>
+                    <h5 class="form-label-name">Name<span class="important">*</span></h5>
                     <input type="text" id="name" placeholder="Enter Your Name" class="form-label-field" required>
                     </div>
                     <div class="form-field">
-                    <h5 class="form-label-name">Email</h5>
-                    <input type="email" id="mail" placeholder="Enter Your Email" class="form-label-field" required>
+                    <h5 class="form-label-name">Designation<span class="important">*</span></h5>
+                    <input type="text" id="designation" placeholder="Enter Your designation" class="form-label-field" required>
                     </div>
                     <div class="form-field">
-                    <h5 class="form-label-name">Message</h5>
+                    <h5 class="form-label-name">Message<span class="important">*</span></h5>
                     <textarea required cols="30" rows="10" class="contact_form-input" placeholder="Enter Your Message" name="message" id="message"></textarea>
                     </div>
-                    <button type="submit" class="form_submit-btn">Submit</button>
+                    <button type="submit" class="form_submit-btn" >Submit</button>
                 </form>
             </div>
             </div>
