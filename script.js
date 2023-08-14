@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('DOMContentLoaded',()=>{
     const resume=document.querySelector('#resume');
     resume.addEventListener('click',(e)=>{
-        window.open("documents/akhil'sResume", '_blank');
+        window.open('documents/myResume.pdf', '_blank');
     })
   })
   
