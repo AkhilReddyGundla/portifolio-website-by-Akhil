@@ -535,6 +535,25 @@ a{
     background-size: cover;
     /* position: relative; */
 }
+.otherContacts{
+    margin : 40px 0px;
+    display: flex;
+    height: 10px;
+    justify-content: space-around;
+}
+.contact1{
+    height: 10px;
+    display: flex;
+    gap: 10px;
+    background: none;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 18px;
+    color: #111;
+}
+.contact-Img{
+    width: auto;
+    height:23px;
+}
 .heading{
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
