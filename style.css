@@ -522,6 +522,9 @@ a{
     transition: transform .3s;
     transition: 0.3 ease-out;
 }
+.project-link{
+    color:black;
+}
 .project-button:hover {
     transform: translateY(-3px);
 }
