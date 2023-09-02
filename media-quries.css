@@ -87,6 +87,11 @@
         flex-direction: column;
     }
 }
+@media screen and (max-width:768px){
+    .contact1{
+        font-size: 14px;
+    }
+}
 @media screen and (max-width:620px){
     .home-social{
         width: 8%;
@@ -139,12 +144,25 @@
         margin-left:10px;
         margin-right: 10px;
     }
+    .contact{
+        height: 70rem;
+    }
     .contact-form{
         width: 100%;
         padding: 2rem;
     }
     .content{
         width: 100%;
+    }
+    .otherContacts{
+        margin-top: 4rem;
+        flex-direction: column;
+    }
+    .contact1{
+        margin: 20px;
+    }
+    .contact-Img{
+        height: 20px;
     }
 }
 
