@@ -116,11 +116,11 @@
     .upper-container{
         flex-direction: column;
     }
-    right-text-footer{
-        order: 1;
+    .right-text-footer{
+        order: 2;
     }
     .left-text{
-        order: 2;
+        order: 1;
     }
 }
 
