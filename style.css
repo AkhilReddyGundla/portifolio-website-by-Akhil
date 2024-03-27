@@ -335,6 +335,11 @@ button{
     width: 85%;
     
 }
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
 .schools{
     width:100%;
     height: 100%;
